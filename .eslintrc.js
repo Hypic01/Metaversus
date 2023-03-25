@@ -7,7 +7,6 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
-    'airbnb',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -30,6 +29,7 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-console': 'off',
     'no-trailing-spaces': ['error', { skipBlankLines: true }],
+     "react/prop-types": "off"
   },
   settings: {
     'import/resolver': {
