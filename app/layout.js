@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import '../styles/globals.css';
 
 function RootLayout({ children }) {
@@ -11,5 +12,9 @@ function RootLayout({ children }) {
     </html>
   );
 }
+
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default RootLayout;

@@ -20,10 +20,12 @@ export const navVariants = {
 };
 
 export const slideIn = (direction, type, delay, duration) => ({
+  /* eslint-disable no-nested-ternary */
   hidden: {
     x: direction === 'left' ? '-100%' : direction === 'right' ? '100%' : 0,
     y: direction === 'up' ? '100%' : direction === 'down' ? '100%' : 0,
   },
+  /* eslint-enable no-nested-ternary */
   show: {
     x: 0,
     y: 0,
@@ -88,11 +90,13 @@ export const textVariant2 = {
 };
 
 export const fadeIn = (direction, type, delay, duration) => ({
+  /* eslint-disable no-nested-ternary */
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
     opacity: 0,
   },
+  /* eslint-enable no-nested-ternary */
   show: {
     x: 0,
     y: 0,
@@ -107,10 +111,12 @@ export const fadeIn = (direction, type, delay, duration) => ({
 });
 
 export const planetVariants = (direction) => ({
+  /* eslint-disable no-nested-ternary */
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
     rotate: 120,
   },
+  /* eslint-enable no-nested-ternary */
   show: {
     x: 0,
     rotate: 0,
