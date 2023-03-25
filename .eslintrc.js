@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
+    "eslint-plugin-import"
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -29,7 +30,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-console': 'off',
     'no-trailing-spaces': ['error', { skipBlankLines: true }],
-     "react/prop-types": "off"
+     "react/prop-types": "off",
+     "import/extensions": "error",
+    "import/no-unresolved": "error"
   },
   settings: {
     'import/resolver': {
